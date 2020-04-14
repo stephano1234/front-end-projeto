@@ -1,0 +1,38 @@
+/*A ordem de leitura das classes de cada tag html é de cima para baixo.*/
+.page {
+    display: none;
+}
+
+.list {
+    display: none;
+}
+
+.edit {
+    display: none;
+}
+
+.side {
+    display: none;
+    text-align: right;
+}
+
+.bottom {
+    display: none;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+}
+/*A classe css active deve ser colocada por último, porque, na ordem de leitura das
+classes de uma determinada tag html, a que receber essa classe deve ter a propriedade
+display sobreposta pela mesma. Dessa forma o sistema lerá primeiramente a classe com
+display: none e irá substituir por display: block da classe active,
+que será lida por último.*/
+.active {
+    display: block;
+}
